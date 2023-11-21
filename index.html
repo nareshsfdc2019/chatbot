@@ -1,0 +1,36 @@
+
+<!doctype html>
+
+<html>
+	<head>  
+
+		<meta frame-ancestors 'self'; default-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:;></meta>
+	
+	</head>
+
+<body>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			console.log('Reached here');
+			embeddedservice_bootstrap.init(
+				'00DDI0000008giE',
+				'ChatBotMIAW',
+				'https://careextern--cepartial.sandbox.my.site.com/ESWChatBotMIAW1700535629585',
+				{
+					scrt2URL: 'https://careextern--cepartial.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://careextern--cepartial.sandbox.my.site.com/ESWChatBotMIAW1700535629585/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+        
+    </body>
+
+</html>
